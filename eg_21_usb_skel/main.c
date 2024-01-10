@@ -307,7 +307,7 @@ static int skel_probe(struct usb_interface *interface, const struct usb_device_i
 	}
 
 	pipe = usb_rcvintpipe(dev->udev, dev->int_in_endpointAddr);
-	maxp = usb_maxpacket(dev->udev, pipe, usb_pipeout(pipe));
+	maxp = usb_maxpacket(dev->udev, pipe);
 
 	dev->int_in_buffer = usb_alloc_coherent(dev->udev, 8, GFP_ATOMIC, &dev->irq_urb->transfer_dma);
 	if (!dev->int_in_buffer) {
