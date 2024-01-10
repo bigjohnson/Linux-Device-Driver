@@ -17,9 +17,15 @@ export KERNELDIR=/path/to/kernel/source/
 This environment variable is mainly used in Makefile to determine which kernel
 source tree the drivers are built against.
 
-# Use default debian kernel
+# Use for default debian kernel
 
-
+as root
+```bash
+# uname -a
+Linux debian 6.1.0-17-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.69-1 (2023-12-30) x86_64 GNU/Linux
+# apt install linux-headers-6.1.0-17-amd64
+```
+use your kernel/arch version
 
 # Introduction
 
