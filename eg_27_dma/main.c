@@ -170,7 +170,7 @@ static void destroy_chrdev(struct irq_dev *irq_dev)
 
 irqreturn_t irq_service(int irq, void *dev_id)
 {
-	struct irq_dev *irq_dev = (struct irq_dev*)(dev_id);
+	//struct irq_dev *irq_dev = (struct irq_dev*)(dev_id);
 	pr_debug("irq triggered: irq = %d\n", irq);
 
 	return IRQ_HANDLED;
