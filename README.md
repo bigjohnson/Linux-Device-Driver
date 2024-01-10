@@ -1,10 +1,10 @@
 # Linux-Device-Driver
 
-Examples of Linux Device Drivers, currently for kernel 5.10.
+Examples of Linux Device Drivers, currently for kernel 6.1.
 
 # Before start
 
-The examples in this repo are compiled against Linux Kernel 5.10. Other versions
+The examples in this repo are compiled against Linux Kernel 6.1. Other versions
 of the Kernel are not tested.
 
 Set `KERNELDIR` environment variable to the Linux kernel source dir, and export 
