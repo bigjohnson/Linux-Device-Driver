@@ -39,7 +39,7 @@ int proc_open(struct inode *inode, struct file *filp)
 	 * Here, we simply pass it to single_open which will be store as
 	 * the `private` field of struct seq_file struct.
 	 */
-	return single_open(filp, proc_show, PDE_DATA(inode));
+	return single_open(filp, proc_show, pde_data(inode));
 }
 
 static
