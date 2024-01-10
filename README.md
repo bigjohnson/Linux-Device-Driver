@@ -27,6 +27,8 @@ Linux debian 6.1.0-17-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.69-1 (2023-12-30) 
 ```
 use your kernel/arch version
 
+Then you can run make withouth parameters on eg_ directories
+
 # Introduction
 
 This repo demonstrates basic examples of Linux Device Driver(LDD) for
