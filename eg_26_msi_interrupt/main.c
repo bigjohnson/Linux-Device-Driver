@@ -202,10 +202,10 @@ static int probe(struct pci_dev *dev, const struct pci_device_id *id)
 	rv = pci_request_regions(dev, MODULE_NAME);
 	pr_err("ERROR pci_request_region: %d\n", rv);
 
-	rv = pci_set_dma_mask(dev, DMA_BIT_MASK(64));
+	rv = dma_set_mask(&dev->dev, DMA_BIT_MASK(64));
 	pr_err("ERROR pci_set_dma_mask: %d\n", rv);
 
-	rv = pci_set_consistent_dma_mask(dev, DMA_BIT_MASK(64));
+	rv = dma_set_coherent_mask(&dev->dev, DMA_BIT_MASK(64));
 	pr_err("ERROR  pci_set_consistent_dma_mask: %d\n", rv);
 
 
