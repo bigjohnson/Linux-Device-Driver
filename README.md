@@ -17,6 +17,10 @@ export KERNELDIR=/path/to/kernel/source/
 This environment variable is mainly used in Makefile to determine which kernel
 source tree the drivers are built against.
 
+# Use default debian kernel
+
+
+
 # Introduction
 
 This repo demonstrates basic examples of Linux Device Driver(LDD) for
